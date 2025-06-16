@@ -9,6 +9,5 @@ It was a great experience customizing and tailoring the template to reflect my o
 
 The website highlights:
 - My background in Data Analytics and Business Intelligence
-- Skills in tools like SQL, Python, Power BI, Tableau, and cloud platforms
-- Selected projects hosted on GitHub
-
+- Skills in tools like SQL, Python, Tableau, Power BI, and cloud platforms like Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP)
+- Data Analytics and Engineering projects hosted on GitHub
