@@ -88,9 +88,12 @@ To clone the project
 git clone https://github.com/viraj-dhane/viraj-dhane.github.io.git
 ```
 
-Open cloned project in VS Code, make respective changes and stage them.
+Open cloned project in VS Code, and pull the latest changes
+```js
+git pull
+```
 
-
+Make respective changes and stage them.
 To commit the changes, 
 
 ```js
