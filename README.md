@@ -79,6 +79,8 @@ To build the app
 npm run dev
 ```
 
+This will give you a local URL like localhost:5173, launch that in your browser.
+
 ## To contribute
 
 To clone the project
@@ -86,7 +88,9 @@ To clone the project
 git clone https://github.com/viraj-dhane/viraj-dhane.github.io.git
 ```
 
-Open cloned project in VS Code, make changes
+Open cloned project in VS Code, make respective changes and stage them.
+
+
 To commit the changes, 
 
 ```js
