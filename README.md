@@ -66,3 +66,37 @@ export default tseslint.config({
   },
 })
 ```
+## To build the project
+
+Install dependency
+```js
+npm install
+```
+
+
+To build the app
+```js
+npm run dev
+```
+
+## To contribute
+
+To clone the project
+```js
+git clone https://github.com/viraj-dhane/viraj-dhane.github.io.git
+```
+
+Open cloned project in VS Code, make changes
+To commit the changes, 
+
+```js
+git commit -a -m "Commit message"
+```
+
+To push the changes, 
+
+```js
+git push
+```
+
+
