@@ -28,7 +28,7 @@ const Contact = () => {
               textAlign: "center",
             }}
           >
-            Contact Me
+            Contact
           </Typography>
         </motion.div>
 
