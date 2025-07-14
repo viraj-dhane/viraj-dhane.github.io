@@ -61,7 +61,6 @@ const projects: Project[] = [
     tags: ["Python", "MS Excel"],
     github: "https://github.com/viraj-dhane/marketing-survey-data-analysis",
   }
-
 ];
 
 const ProjectCard = ({

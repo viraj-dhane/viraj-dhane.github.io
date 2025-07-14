@@ -4,13 +4,14 @@ import { Theme } from "@mui/material/styles";
 import { motion } from "framer-motion";
 
 const skills = {
-  "Languages": ["Python", "SQL", "R", "Java", "C++", "HTML", "CSS"],
-  "Database": ["Snowflake", "SQL Server", "MySQL", "PostgreSQL", "NoSQL", "MongoDB", "AWS DynamoDB", "Oracle"],
-  "Data Management": ["Express", "Python"],
-  "Data Visualization and Business Intelligence": ["Tableau", "Power BI", "Creating Charts & Graphs", "Looker Google Studio", "Excel (Macros, VBA, VLOOKUPs, PivotTables)", "Data Mining", "Reporting & Dashboards", "Statistical Analysis", "Regression"],
-  "Cloud Computing": ["AWS (EC2, DynamoDB, S3, Redshift, Lambda, Athena)", " GCP (BigQuery)", "Snowflake", "Azure"],
-  "Other Skills": [ "CI/CD", "DBT", "Airflow", "Pandas", "NumPy", "Matplotlib", "PyTorch", "PySpark", "TensorFlow", "Scikit-learn", "SciPy", "Databricks", "Google Analytics", "GenAI", "Robotic Process Automation (RPA)"],
-  "Social Listening Tools": ["Meltwater", "Displayr", "MuckRack", "Talkwalker", "Puls"]
+  "Languages": ["SQL", "Python", "R", "Java", "C++", "JavaScript", "HTML", "CSS"],
+  "Database": ["Snowflake", "SQL Server", "MySQL", "PostgreSQL", "Oracle", "NoSQL", "MongoDB", "AWS DynamoDB"],
+  "Data Engineering & Management": ["ETL/ELT Pipelines", "Data Built Tool (DBT)", "Data Modeling", "Data Warehousing", "Data Integration", "Data Quality", "Data Governance", "Data Privacy", "API Integration", "Data Advocacy"],
+  "Data Visualization & Business Intelligence": ["Tableau", "MS Power BI", "Amazon QuickSight", "Looker Studio (Google Data Studio)", "Creating Charts & Graphs", "Excel (VLOOKUPs, PivotTables, Macros, VBA)", "Data Mining", "Reporting", "Dashboarding", "Statistical Analysis", "Descriptive Analytics", "Predictive Analytics", "Prescriptive Analytics", "Regression Analysis"],
+  "Cloud Computing": ["AWS (EC2, S3, Redshift, Lambda, DynamoDB, Athena)", " GCP (BigQuery)", "Snowflake", "Azure", "Databricks"],
+  "Data Orchestration & DevOps": ["Airflow", "CI/CD"],
+  "Media Intelligence": ["Google Analytics", "Meltwater", "MuckRack", "Displayr", "Talkwalker", "Pulsar"],
+  "Other Skills": ["Pandas", "NumPy", "Matplotlib", "PyTorch", "PySpark", "TensorFlow", "Scikit-learn", "SciPy", "GenAI", "Robotic Process Automation (RPA)"]
 };
 
 const About = () => (
