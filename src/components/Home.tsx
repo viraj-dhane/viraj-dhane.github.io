@@ -16,7 +16,7 @@ import { Theme } from "@mui/material/styles";
 const Home = () => (
   <Box
     sx={{
-      minHeight: "70vh",
+      minHeight: "80vh",
       display: "flex",
       alignItems: "center",
       background: (theme: Theme) => theme.palette.background.default,

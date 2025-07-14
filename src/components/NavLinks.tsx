@@ -92,11 +92,11 @@ const NavLinks = () => {
               sx={{
                 color: theme.palette.text.primary,
                 textDecoration: "none",
-                fontWeight: "bold",
+                fontWeight: "normal",
                 cursor: "pointer",
               }}
             >
-              RB
+              Viraj Dhane
             </Typography>
             <IconButton
               color="inherit"
