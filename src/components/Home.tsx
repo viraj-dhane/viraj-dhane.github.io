@@ -139,7 +139,7 @@ const Home = () => (
                       backgroundColor: "rgba(100, 255, 218, 0.1)",
                     },
                   }}
-                  href="blob:https://github.com/a74e7088-b371-41a6-82a5-4e5bc8253615"
+                  href="https://raw.githubusercontent.com/viraj-dhane/viraj-dhane.github.io/main/src/assets/viraj_dhane_resume.pdf"
                   target="_blank"
                 >
                   Resume
