@@ -25,41 +25,41 @@ interface Project {
 
 const projects: Project[] = [
     {
-    title: "Data Analysis",
+    title: "Data Warehousing and Analytics",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-    tags: ["HTML", "CSS"],
-    github: "https://github.com/viraj-dhane/viraj-dhane.github.io",
+      "This project demonstrates a comprehensive data warehousing and analytics solution. Developed a data warehouse using SQL Server to consolidate sales data and SQL-based analytics queries to deliver detailed insights into customer behavior, product performance, and sales trends.",
+    tags: ["SQL", "MS SQL Server"],
+    github: "https://github.com/viraj-dhane/sql-data-warehouse-project",
   },  {
-    title: "Lorem Ipsum",
+    title: "Sales Dashboard",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-    tags: ["HTML", "CSS"],
-    github: "https://github.com/viraj-dhane/viraj-dhane.github.io",
+      "This project involves building Tableau dashboards to help stakeholders analyze sales performance and customer behavior. Sales dashboard presents an overview of the sales metrics and trends. Customers dashboard provides insights into customer data, trends and behaviors.",
+    tags: ["Tableau"],
+    github: "https://public.tableau.com/app/profile/viraj.dhane/viz/Tableau_SalesDashboard_17214314296390/SalesDashboard",
   },  {
-    title: "Lorem Ipsum",
+    title: "Marketing and Sales Data Analysis",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-    tags: ["HTML", "CSS"],
-    github: "https://github.com/viraj-dhane/viraj-dhane.github.io",
+      "This project aims to develop test attribution models using SQL queries to understand customer touchpoints and identify the highest revenue-generating marketing and sales channels and segments.",
+    tags: ["SQL", "MS SQL Server"],
+    github: "https://github.com/viraj-dhane/sql-marketing-data-analysis",
   },  {
-    title: "Lorem Ipsum",
+    title: "ETL Pipeline / End-to-End Data Pipeline",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-    tags: ["HTML", "CSS"],
-    github: "https://github.com/viraj-dhane/viraj-dhane.github.io",
+      "This project involves implementing a ETL pipeline that integrates the Spotify API with AWS services. Used Python for data extraction and transformation; AWS Lambda for automated data processing and scheduling; AWS S3 for storage, Glue for data cataloging, and Athena for SQL-based analytics.",
+    tags: ["Python", "AWS S3", "AWS Lambda", "AWS Glue", "AWS Athena"],
+    github: "https://github.com/viraj-dhane/spotify-end-to-end-data-pipeline",
   },  {
-    title: "Lorem Ipsum",
+    title: "Crime Analysis",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-    tags: ["HTML", "CSS"],
-    github: "https://github.com/viraj-dhane/viraj-dhane.github.io",
+      "Conducted an in-depth analysis of 231,000 crime incidents across seven datasets using Python. The project focused on trends by time, location, and crime type, with data cleaning, aggregation, and visualization to uncover insights for crime prevention and resource planning.",
+    tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Math"],
+    github: "https://github.com/viraj-dhane/python-crime-data-analysis",
   },  {
-    title: "Lorem Ipsum",
+    title: "Customer Survey Data Analysis",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-    tags: ["HTML", "CSS"],
-    github: "https://github.com/viraj-dhane/viraj-dhane.github.io",
+      "This project involves the analysis of survey data using Python to evaluate marketing effectiveness and service performance. Performed data cleaning, one-hot encoding, and visualizations to extract insights. Conducted comparative analysis and provided recommendations to improve campaign strategies and customer experience.",
+    tags: ["Python", "MS Excel"],
+    github: "https://github.com/viraj-dhane/marketing-survey-data-analysis",
   }
 
 ];
