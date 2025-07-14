@@ -28,7 +28,7 @@ const Contact = () => {
               textAlign: "center",
             }}
           >
-            Get In Touch
+            Contact Me
           </Typography>
         </motion.div>
 
@@ -47,7 +47,7 @@ const Contact = () => {
               color: (theme: Theme) => theme.palette.text.secondary,
             }}
           >
-            Let’s talk and explore how we can collaborate!
+            I'd love to explore how we can collaborate - let's connect.
           </Typography>
         </motion.div>
 
