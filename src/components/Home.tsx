@@ -104,7 +104,7 @@ const Home = () => (
                   color: (theme: Theme) => theme.palette.text.primary,
                 }}
               >
-                Data and Business Intelligence Analyst with 3+ years of experience in tech, consulting, and marketing. My goal is to bridge the gap between raw data and strategic decision-making.
+                <strong>Data and Business Intelligence Analyst</strong> with 3+ years of experience in tech, consulting, and marketing. My goal is to bridge the gap between raw data and strategic decision-making.
               </Typography>
             </motion.div>
 
@@ -139,7 +139,7 @@ const Home = () => (
                       backgroundColor: "rgba(100, 255, 218, 0.1)",
                     },
                   }}
-                  href="https://drive.google.com/file/d/1nraZJIEGv3d-8zYwLSDZq4UGRIuzPVSP/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Tskaeocd7MEZrtYPJGg_E36YhvTafSdg/view?usp=sharing"
                   target="_blank"
                 >
                   Resume

@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const skills = {
   "Languages": ["SQL", "Python", "R", "Java", "C++", "JavaScript", "HTML", "CSS"],
-  "Database": ["Snowflake", "SQL Server", "MySQL", "PostgreSQL", "Oracle", "NoSQL", "MongoDB", "AWS DynamoDB"],
-  "Data Engineering & Management": ["ETL/ELT Pipelines", "Data Built Tool (DBT)", "Data Modeling", "Data Warehousing", "Data Integration", "Data Quality", "Data Governance", "Data Privacy", "API Integration", "Data Advocacy"],
-  "Data Visualization & Business Intelligence": ["Tableau", "MS Power BI", "Amazon QuickSight", "Looker Studio (Google Data Studio)", "Creating Charts & Graphs", "Excel (VLOOKUPs, PivotTables, Macros, VBA)", "Data Mining", "Reporting", "Dashboarding", "Statistical Analysis", "Descriptive Analytics", "Predictive Analytics", "Prescriptive Analytics", "Regression Analysis"],
-  "Cloud Computing": ["AWS (EC2, S3, Redshift, Lambda, DynamoDB, Athena)", " GCP (BigQuery)", "Snowflake", "Azure", "Databricks"],
-  "Data Orchestration & DevOps": ["Airflow", "CI/CD"],
-  "Media Intelligence": ["Google Analytics", "Meltwater", "MuckRack", "Displayr", "Talkwalker", "Pulsar"],
-  "Other Skills": ["Pandas", "NumPy", "Matplotlib", "PyTorch", "PySpark", "TensorFlow", "Scikit-learn", "SciPy", "GenAI", "Robotic Process Automation (RPA)"]
+  "Database": ["Snowflake", "BigQuery", "SQL Server Management Studio (SSMS)", "MySQL", "PostgreSQL"],
+  "Data Engineering & Management": ["ETL/ELT Pipelines", "Data Modeling", "Data Warehousing", "Data Integration", "Data Quality", "Data Governance", "Data Privacy", "API Integration", "Data Advocacy"],
+  "Data Visualization & Business Intelligence": ["Tableau", "Tableau Prep Builder", "MS Power BI", "Excel (VLOOKUPs, PivotTables, Macros, VBA)"],
+  "Cloud Computing": ["AWS", "GCP", "Snowflake", "Azure", "Databricks"],
+  "Data Orchestration & DevOps": ["Azure DevOps", "Airflow", "CI/CD"],
+  "Media Intelligence": ["Google Analytics", "Meltwater", "MuckRack"],
+  "Other Skills": ["Pandas", "NumPy", "Matplotlib", "PyTorch", "PySpark", "TensorFlow", "Scikit-learn", "SciPy", "GenAI", "Statistical Analysis", "Descriptive Analytics", "Predictive Analytics", "Prescriptive Analytics", "Robotic Process Automation (RPA)"]
 };
 
 const About = () => (
