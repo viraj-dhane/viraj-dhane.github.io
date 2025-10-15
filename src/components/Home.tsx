@@ -139,7 +139,7 @@ const Home = () => (
                       backgroundColor: "rgba(100, 255, 218, 0.1)",
                     },
                   }}
-                  href="https://drive.google.com/file/d/1Tskaeocd7MEZrtYPJGg_E36YhvTafSdg/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1RV7pwV_F3p0_iihmLy3CGv-WFNicFaA2/view?usp=sharing"
                   target="_blank"
                 >
                   Resume
