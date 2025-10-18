@@ -152,8 +152,8 @@ const ProjectCard = ({
 const Projects = () => (
   <>
     <NavLinks />
-    <Container maxWidth="lg" sx={{ px: { xs: 4, md: 4 } }}>
-      <Box sx={{ pt: { xs: 2, md: 3 }, pb: 2 }}>
+    <Container maxWidth="lg" sx={{ px: { xs: 3, md: 3 } }}>
+      <Box sx={{ pt: { xs: 1, md: 2 }, pb: 1 }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -165,8 +165,9 @@ const Projects = () => (
             sx={{
               color: (theme) => theme.palette.primary.main,
               fontWeight: 700,
-              mb: 3, // Increased margin bottom
+              mb: 2, // Reduced margin bottom
               textAlign: "left", // Ensure left alignment
+              fontSize: { xs: "1.8rem", sm: "2rem" }, // Reduced font size
             }}
           >
             Featured Projects
@@ -181,7 +182,7 @@ const Projects = () => (
               sm: "repeat(2, 1fr)",
               md: "repeat(3, 1fr)",
             },
-            gap: 4,
+            gap: 2, // Reduced gap from 4 to 2
             width: "100%",
           }}
         >

@@ -1,5 +1,5 @@
 // src/pages/About.tsx
-import { Container, Typography, Box, Grid, Stack, Chip } from "@mui/material";
+import { Container, Typography, Box, Grid } from "@mui/material";
 import { Theme } from "@mui/material/styles";
 import { motion } from "framer-motion";
 
@@ -18,9 +18,9 @@ const About = () => (
   <Container maxWidth="lg">
     <Box
       sx={{
-        pb: 2,
-        px: { xs: 4, sm: 3 }, // Increased mobile padding
-        pt: { xs: 2, sm: 3 }, // Reduced top padding
+        pb: 1, // Reduced bottom padding
+        px: { xs: 3, sm: 2 }, // Reduced padding
+        pt: { xs: 1, sm: 2 }, // Further reduced top padding
       }}
     >
       <motion.div
@@ -34,8 +34,9 @@ const About = () => (
           sx={{
             color: (theme: Theme) => theme.palette.primary.main,
             fontWeight: 700,
-            mb: 3, // Increased margin bottom
+            mb: 2, // Reduced margin bottom
             textAlign: "left", // Ensure left alignment
+            fontSize: { xs: "1.8rem", sm: "2rem" }, // Reduced font size
           }}
         >
           About Me
@@ -60,8 +61,9 @@ const About = () => (
               paragraph
               sx={{ 
                 textAlign: "left",
-                lineHeight: 1.6,
-                mb: 2
+                lineHeight: 1.5, // Reduced line height
+                mb: 1, // Reduced margin
+                fontSize: { xs: "0.9rem", sm: "1rem" }, // Reduced font size
               }}
             >
               Skilled in leading BI initiatives through agile workflows, stakeholder alignment, and cross-functional teamwork. Proficient in SQL, Python, R, Tableau, MS Power BI, Cloud Computing (AWS, Azure, GCP, Snowflake), Google Analytics, Project Management, and many more.
@@ -71,8 +73,9 @@ const About = () => (
               paragraph
               sx={{ 
                 textAlign: "left",
-                lineHeight: 1.6,
-                mb: 2
+                lineHeight: 1.5, // Reduced line height
+                mb: 1, // Reduced margin
+                fontSize: { xs: "0.9rem", sm: "1rem" }, // Reduced font size
               }}
             >
               I get excited about opportunities where I can leverage big data to discover insights and identify patterns that have a real human impact. My work includes conducting in-depth data analysis, designing powerful visualization dashboards that deliver actionable insights, building data pipelines, optimizing workflows, and driving business intelligence initiatives.
@@ -82,8 +85,9 @@ const About = () => (
               paragraph
               sx={{ 
                 textAlign: "left",
-                lineHeight: 1.6,
-                mb: 2
+                lineHeight: 1.5, // Reduced line height
+                mb: 1, // Reduced margin
+                fontSize: { xs: "0.9rem", sm: "1rem" }, // Reduced font size
               }}
             >
               I love connecting with new people. Let's connect and explore how we can work together!
@@ -103,52 +107,62 @@ const About = () => (
               sx={{
                 color: (theme: Theme) => theme.palette.primary.main,
                 mb: 2,
+                fontSize: { xs: "1.1rem", sm: "1.2rem" }, // Smaller heading
               }}
             >
               Technical Skills
             </Typography>
 
-            {Object.entries(skills).map(([category, items]) => (
-              <Box
-                key={category}
-                sx={{
-                  mb: 2,
-                  p: 2,
-                  borderLeft: "2px solid",
-                  borderColor: (theme: Theme) => theme.palette.primary.main,
-                  "&:hover": {
-                    backgroundColor: "rgba(25, 118, 210, 0.09)",
-                    transform: "translateX(10px)",
-                    transition: "all 0.3s ease-in-out",
-                  },
-                }}
-              >
-                <Typography
-                  variant="subtitle1"
+            {/* Compact skills layout */}
+            <Box
+              sx={{
+                display: "grid",
+                gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" },
+                gap: 2,
+                mb: 2,
+              }}
+            >
+              {Object.entries(skills).map(([category, items]) => (
+                <Box
+                  key={category}
                   sx={{
-                    color: (theme: Theme) => theme.palette.text.primary,
-                    fontWeight: 600,
-                    mb: 2,
+                    p: 1.5, // Reduced padding
+                    border: "1px solid",
+                    borderColor: (theme: Theme) => theme.palette.primary.main,
+                    borderRadius: 1,
+                    backgroundColor: "rgba(25, 118, 210, 0.05)",
+                    "&:hover": {
+                      backgroundColor: "rgba(25, 118, 210, 0.1)",
+                      transform: "translateY(-2px)",
+                      transition: "all 0.3s ease-in-out",
+                    },
                   }}
                 >
-                  {category}
-                </Typography>
-                <Stack direction="row" flexWrap="wrap" gap={1.5}>
-                  {items.map((skill) => (
-                    <Chip
-                      key={skill}
-                      label={skill}
-                      sx={{
-                        backgroundColor: "rgba(25, 118, 210, 0.7))",
-                        color: (theme: Theme) => theme.palette.primary.main,
-                        borderRadius: "16px",
-                        fontWeight: 500,
-                      }}
-                    />
-                  ))}
-                </Stack>
-              </Box>
-            ))}
+                  <Typography
+                    variant="subtitle2"
+                    sx={{
+                      color: (theme: Theme) => theme.palette.primary.main,
+                      fontWeight: 600,
+                      mb: 1,
+                      fontSize: "0.9rem", // Smaller category text
+                    }}
+                  >
+                    {category}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    sx={{
+                      color: (theme: Theme) => theme.palette.text.secondary,
+                      fontSize: "0.8rem", // Smaller skill text
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    {items.slice(0, 4).join(" • ")} {/* Show only first 4 skills */}
+                    {items.length > 4 && " • +" + (items.length - 4) + " more"}
+                  </Typography>
+                </Box>
+              ))}
+            </Box>
           </motion.div>
         </Grid>
       </Grid>

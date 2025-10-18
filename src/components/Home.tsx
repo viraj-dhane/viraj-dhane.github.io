@@ -16,15 +16,15 @@ import { Theme } from "@mui/material/styles";
 const Home = () => (
   <Box
     sx={{
-      minHeight: "80vh",
+      minHeight: "60vh", // Reduced from 80vh to 60vh
       display: "flex",
       alignItems: "center",
       background: (theme: Theme) => theme.palette.background.default,
       color: (theme: Theme) => theme.palette.text.primary,
       position: "relative",
       overflow: "hidden",
-      pt: { xs: 8, sm: 6, md: 4 }, // Add top padding for mobile devices
-      pb: { xs: 4, sm: 3, md: 2 }, // Add bottom padding
+      pt: { xs: 4, sm: 3, md: 2 }, // Reduced padding
+      pb: { xs: 2, sm: 2, md: 1 }, // Reduced padding
     }}
   >
     {/* Background decoration */}
@@ -45,19 +45,19 @@ const Home = () => (
     <Container
       maxWidth="lg"
       sx={{
-        px: { xs: 3, sm: 3, md: 4 }, // Responsive padding for all screen sizes
-        py: { xs: 2, sm: 1, md: 0 }, // Add vertical padding for mobile
+        px: { xs: 2, sm: 2, md: 3 }, // Reduced padding
+        py: { xs: 1, sm: 1, md: 0 }, // Reduced vertical padding
       }}
     >
       <Box sx={{ position: "relative", zIndex: 1 }}>
         <Grid
           container
-          spacing={{ xs: 2, sm: 3, md: 4 }}
+          spacing={{ xs: 1, sm: 2, md: 3 }} // Reduced spacing
           alignItems="center"
           sx={{
             "& .MuiGrid-item": {
-              paddingLeft: { xs: "12px", sm: "16px", md: "24px" },
-              paddingRight: { xs: "12px", sm: "16px", md: "24px" },
+              paddingLeft: { xs: "8px", sm: "12px", md: "16px" }, // Reduced padding
+              paddingRight: { xs: "8px", sm: "12px", md: "16px" }, // Reduced padding
             },
           }}
         >
@@ -89,9 +89,9 @@ const Home = () => (
                 gutterBottom
                 fontWeight="bold"
                 sx={{ 
-                  fontSize: { xs: "2.2rem", sm: "2.5rem", md: "4rem" },
-                  mt: { xs: 1, sm: 0 }, // Add top margin for mobile
-                  mb: { xs: 2, sm: 1, md: 0 }, // Responsive bottom margin
+                  fontSize: { xs: "2rem", sm: "2.2rem", md: "3rem" }, // Reduced font sizes
+                  mt: { xs: 0, sm: 0 }, // Removed top margin
+                  mb: { xs: 1, sm: 1, md: 0 }, // Reduced bottom margin
                 }}
               >
                 Viraj Dhane
@@ -122,7 +122,7 @@ const Home = () => (
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <Stack direction="row" spacing={3} sx={{ mb: 4 }}>
+              <Stack direction="row" spacing={2} sx={{ mb: 2 }}> {/* Reduced spacing and margin */}
                 <Button
                   onClick={() => {
                     const element = document.getElementById("projects");
@@ -203,8 +203,8 @@ const Home = () => (
                 src={profileImg}
                 alt="Viraj Dhane"
                 sx={{
-                  width: { xs: "200px", md: "270px" },
-                  height: { xs: "200px", md: "270px" },
+                  width: { xs: "150px", md: "200px" }, // Reduced image size
+                  height: { xs: "150px", md: "200px" }, // Reduced image size
                   borderRadius: "50%",
                   objectFit: "cover",
                   border: "3px solid",
