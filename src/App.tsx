@@ -32,6 +32,17 @@ const globalStyles = {
     "& > *": {
       width: "100%",
     },
+    // Ensure proper spacing for mobile devices
+    "@media (max-width: 600px)": {
+      paddingTop: "20px",
+    },
+  },
+  // Fix text alignment globally
+  "h1, h2, h3, h4, h5, h6": {
+    textAlign: "left",
+  },
+  "p, span, div": {
+    textAlign: "left",
   },
 };
 
