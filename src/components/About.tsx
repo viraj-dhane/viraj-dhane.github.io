@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const skills = {
   "Languages": ["SQL", "Python", "R", "Java", "C++", "JavaScript", "HTML", "CSS"],
+  "Data Visualization & Business Intelligence": ["Tableau", "Tableau Prep Builder", "MS Power BI", "Excel (VLOOKUP, PivotTables, Macros, VBA)"],
   "Database": ["Snowflake", "BigQuery", "SQL Server Management Studio (SSMS)", "MySQL", "PostgreSQL"],
   "Data Engineering & Management": ["ETL/ELT Pipelines", "Data Modeling", "Data Warehousing", "Data Integration", "Data Quality", "Data Governance", "Data Privacy", "API Integration", "Data Advocacy"],
-  "Data Visualization & Business Intelligence": ["Tableau", "Tableau Prep Builder", "MS Power BI", "Excel (VLOOKUPs, PivotTables, Macros, VBA)"],
   "Cloud Computing": ["AWS", "GCP", "Snowflake", "Azure", "Databricks"],
   "Data Orchestration & DevOps": ["Azure DevOps", "Airflow", "CI/CD"],
   "Media Intelligence": ["Google Analytics", "Meltwater", "MuckRack"],
-  "Other Skills": ["Pandas", "NumPy", "Matplotlib", "PyTorch", "PySpark", "TensorFlow", "Scikit-learn", "SciPy", "GenAI", "Statistical Analysis", "Descriptive Analytics", "Predictive Analytics", "Prescriptive Analytics", "Robotic Process Automation (RPA)"]
+  // "Other Skills": ["Pandas", "NumPy", "Matplotlib", "PyTorch", "PySpark", "TensorFlow", "Scikit-learn", "SciPy", "GenAI", "Statistical Analysis", "Descriptive Analytics", "Predictive Analytics", "Prescriptive Analytics", "Robotic Process Automation (RPA)"]
 };
 
 const About = () => (
@@ -153,12 +153,16 @@ const About = () => (
                     variant="body2"
                     sx={{
                       color: (theme: Theme) => theme.palette.text.secondary,
-                      fontSize: "0.8rem", // Smaller skill text
+                      fontSize: "0.9rem", // Smaller skill text
                       lineHeight: 1.4,
                     }}
                   >
-                    {items.slice(0, 4).join(" • ")} {/* Show only first 4 skills */}
-                    {items.length > 4 && " • +" + (items.length - 4) + " more"}
+                    {items.map((skill, index) => (
+                      <span key={index}>
+                        <span style={{ fontWeight: "bold" }}>{skill}</span>
+                        {index < items.length - 1 && " | "}
+                      </span>
+                    ))}
                   </Typography>
                 </Box>
               ))}
