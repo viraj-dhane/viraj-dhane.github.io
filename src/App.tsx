@@ -28,13 +28,13 @@ const globalStyles = {
     display: "flex",
     alignItems: "center",
     scrollMarginTop: "56px", // Account for mobile header
-    padding: "0 0 80px", // Remove top padding, keep bottom padding
+    padding: "0 0 40px", // Reduced bottom padding from 80px to 40px
     "& > *": {
       width: "100%",
     },
     // Ensure proper spacing for mobile devices
     "@media (max-width: 600px)": {
-      paddingTop: "20px",
+      paddingTop: "10px", // Reduced from 20px to 10px
     },
   },
   // Fix text alignment globally
