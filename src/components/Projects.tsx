@@ -152,8 +152,8 @@ const ProjectCard = ({
 const Projects = () => (
   <>
     <NavLinks />
-    <Container maxWidth="lg" sx={{ px: { xs: 2, md: 4 } }}>
-      <Box sx={{ pt: { xs: 6, md: 4 }, pb: 2 }}>
+    <Container maxWidth="lg" sx={{ px: { xs: 4, md: 4 } }}>
+      <Box sx={{ pt: { xs: 2, md: 3 }, pb: 2 }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -165,7 +165,8 @@ const Projects = () => (
             sx={{
               color: (theme) => theme.palette.primary.main,
               fontWeight: 700,
-              mb: 2,
+              mb: 3, // Increased margin bottom
+              textAlign: "left", // Ensure left alignment
             }}
           >
             Featured Projects

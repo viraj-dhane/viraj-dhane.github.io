@@ -44,12 +44,12 @@ const MainPage = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" style={{ width: "100%" }}>
+      <section id="about" style={{ width: "100%", paddingTop: "20px" }}>
         <About />
       </section>
 
       {/* Projects Section */}
-      <section id="projects" style={{ width: "100%" }}>
+      <section id="projects" style={{ width: "100%", paddingTop: "20px" }}>
         <Projects />
       </section>
 

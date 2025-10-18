@@ -15,11 +15,12 @@ const skills = {
 };
 
 const About = () => (
-  <Container>
+  <Container maxWidth="lg">
     <Box
       sx={{
         pb: 2,
-        px: { xs: 2, sm: 3 }, // Add horizontal padding
+        px: { xs: 4, sm: 3 }, // Increased mobile padding
+        pt: { xs: 2, sm: 3 }, // Reduced top padding
       }}
     >
       <motion.div
@@ -33,7 +34,8 @@ const About = () => (
           sx={{
             color: (theme: Theme) => theme.palette.primary.main,
             fontWeight: 700,
-            mb: 2,
+            mb: 3, // Increased margin bottom
+            textAlign: "left", // Ensure left alignment
           }}
         >
           About Me
@@ -53,14 +55,38 @@ const About = () => (
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Typography variant="body1" paragraph>
+            <Typography 
+              variant="body1" 
+              paragraph
+              sx={{ 
+                textAlign: "left",
+                lineHeight: 1.6,
+                mb: 2
+              }}
+            >
               Skilled in leading BI initiatives through agile workflows, stakeholder alignment, and cross-functional teamwork. Proficient in SQL, Python, R, Tableau, MS Power BI, Cloud Computing (AWS, Azure, GCP, Snowflake), Google Analytics, Project Management, and many more.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography 
+              variant="body1" 
+              paragraph
+              sx={{ 
+                textAlign: "left",
+                lineHeight: 1.6,
+                mb: 2
+              }}
+            >
               I get excited about opportunities where I can leverage big data to discover insights and identify patterns that have a real human impact. My work includes conducting in-depth data analysis, designing powerful visualization dashboards that deliver actionable insights, building data pipelines, optimizing workflows, and driving business intelligence initiatives.
             </Typography>
-            <Typography variant="body1" paragraph>
-              I love connecting with new people. Let’s connect and explore how we can work together!
+            <Typography 
+              variant="body1" 
+              paragraph
+              sx={{ 
+                textAlign: "left",
+                lineHeight: 1.6,
+                mb: 2
+              }}
+            >
+              I love connecting with new people. Let's connect and explore how we can work together!
             </Typography>
           </motion.div>
         </Grid>

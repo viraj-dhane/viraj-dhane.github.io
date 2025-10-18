@@ -12,7 +12,7 @@ import { GitHub, LinkedIn, Email } from "@mui/icons-material";
 const Contact = () => {
   return (
     <Container maxWidth="lg">
-      <Box sx={{ pt: { xs: 6, md: 4 }, pb: 0 }}>
+      <Box sx={{ pt: { xs: 6, md: 6 }, pb: 0, px: { xs: 4, sm: 3 } }}>
         <motion.div
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ const Contact = () => {
             sx={{
               color: (theme: Theme) => theme.palette.primary.main,
               fontWeight: 700,
-              mb: 2,
+              mb: 3, // Increased margin bottom
               textAlign: "center",
             }}
           >

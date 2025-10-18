@@ -23,6 +23,8 @@ const Home = () => (
       color: (theme: Theme) => theme.palette.text.primary,
       position: "relative",
       overflow: "hidden",
+      pt: { xs: 8, sm: 6, md: 4 }, // Add top padding for mobile devices
+      pb: { xs: 4, sm: 3, md: 2 }, // Add bottom padding
     }}
   >
     {/* Background decoration */}
@@ -43,18 +45,19 @@ const Home = () => (
     <Container
       maxWidth="lg"
       sx={{
-        px: { xs: 4, sm: 3 }, // 32px (4 * 8px) padding for mobile, 24px for larger screens
+        px: { xs: 3, sm: 3, md: 4 }, // Responsive padding for all screen sizes
+        py: { xs: 2, sm: 1, md: 0 }, // Add vertical padding for mobile
       }}
     >
       <Box sx={{ position: "relative", zIndex: 1 }}>
         <Grid
           container
-          spacing={4}
+          spacing={{ xs: 2, sm: 3, md: 4 }}
           alignItems="center"
           sx={{
             "& .MuiGrid-item": {
-              paddingLeft: { xs: "32px", sm: "24px" },
-              paddingRight: { xs: "32px", sm: "24px" },
+              paddingLeft: { xs: "12px", sm: "16px", md: "24px" },
+              paddingRight: { xs: "12px", sm: "16px", md: "24px" },
             },
           }}
         >
@@ -85,7 +88,11 @@ const Home = () => (
                 variant="h1"
                 gutterBottom
                 fontWeight="bold"
-                sx={{ fontSize: { xs: "2.5rem", md: "4rem" } }}
+                sx={{ 
+                  fontSize: { xs: "2.2rem", sm: "2.5rem", md: "4rem" },
+                  mt: { xs: 1, sm: 0 }, // Add top margin for mobile
+                  mb: { xs: 2, sm: 1, md: 0 }, // Responsive bottom margin
+                }}
               >
                 Viraj Dhane
               </Typography>
@@ -102,6 +109,8 @@ const Home = () => (
                   maxWidth: "600px",
                   mb: 2,
                   color: (theme: Theme) => theme.palette.text.primary,
+                  textAlign: "left", // Ensure left alignment
+                  lineHeight: 1.6,
                 }}
               >
                 <strong>Data and Business Intelligence Analyst</strong> with 3+ years of experience in tech, consulting, and marketing. My goal is to bridge the gap between raw data and strategic decision-making.
