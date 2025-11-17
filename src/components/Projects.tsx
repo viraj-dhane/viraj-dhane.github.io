@@ -3,6 +3,7 @@ import {
   Typography,
   Container,
   Card,
+  CardActionArea,
   CardContent,
   CardActions,
   Chip,
@@ -69,85 +70,100 @@ const ProjectCard = ({
 }: {
   project: Project;
   index: number;
-}) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: index * 0.1 }}
-  >
-    <Card
-      sx={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: (theme) => theme.palette.background.paper,
-        border: "1px solid",
-        borderColor: "rgba(255, 255, 255, 0.1)",
-        "&:hover": {
-          borderColor: (theme) => theme.palette.primary.main,
-          transform: "translateY(-4px)",
-          transition: "all 0.3s ease-in-out",
-        },
-        transition: "all 0.3s ease-in-out",
-      }}
+}) => {
+  const handleCardClick = () => {
+    window.open(project.github, "_blank", "noopener,noreferrer");
+  };
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <CardContent sx={{ flexGrow: 1, p: 3 }}>
-        <Typography
-          variant="h6"
-          gutterBottom
+      <Card
+        sx={{
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          background: (theme) => theme.palette.background.paper,
+          border: "1px solid",
+          borderColor: "rgba(255, 255, 255, 0.1)",
+          cursor: "pointer",
+          "&:hover": {
+            borderColor: (theme) => theme.palette.primary.main,
+            transform: "translateY(-4px)",
+            transition: "all 0.3s ease-in-out",
+          },
+          transition: "all 0.3s ease-in-out",
+        }}
+      >
+        <CardActionArea
+          onClick={handleCardClick}
           sx={{
-            color: (theme) => theme.palette.primary.main,
-            fontWeight: 600,
-            fontSize: "1.25rem",
-            mb: 2,
+            flexGrow: 1,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "stretch",
           }}
         >
-          {project.title}
-        </Typography>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          sx={{ mb: 2, minHeight: "60px", lineHeight: 1.6 }}
-        >
-          {project.description}
-        </Typography>
-        <Stack direction="row" flexWrap="wrap" gap={1} sx={{ mb: 2 }}>
-          {project.tags.map((tag) => (
-            <Chip
-              key={tag}
-              label={tag}
+          <CardContent sx={{ flexGrow: 1, p: 3 }}>
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                color: (theme) => theme.palette.primary.main,
+                fontWeight: 600,
+                fontSize: "1.25rem",
+                mb: 2,
+              }}
+            >
+              {project.title}
+            </Typography>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ mb: 2, minHeight: "60px", lineHeight: 1.6 }}
+            >
+              {project.description}
+            </Typography>
+            <Stack direction="row" flexWrap="wrap" gap={1} sx={{ mb: 2 }}>
+              {project.tags.map((tag) => (
+                <Chip
+                  key={tag}
+                  label={tag}
+                  size="small"
+                  sx={{
+                    backgroundColor: "rgba(25, 118, 210, 0.7))",
+                    color: (theme: Theme) => theme.palette.primary.main,
+                    borderRadius: "4px",
+                    fontSize: "0.75rem",
+                  }}
+                />
+              ))}
+            </Stack>
+          </CardContent>
+          <CardActions sx={{ justifyContent: "flex-end", p: 2, pt: 0 }}>
+            <IconButton
               size="small"
               sx={{
-                backgroundColor: "rgba(25, 118, 210, 0.7))",
-                color: (theme: Theme) => theme.palette.primary.main,
-                borderRadius: "4px",
-                fontSize: "0.75rem",
+                color: (theme) => theme.palette.text.secondary,
+                "&:hover": {
+                  color: (theme) => theme.palette.primary.main,
+                  transform: "scale(1.1)",
+                },
+                transition: "all 0.2s ease-in-out",
+                pointerEvents: "none",
               }}
-            />
-          ))}
-        </Stack>
-      </CardContent>
-      <CardActions sx={{ justifyContent: "flex-end", p: 2, pt: 0 }}>
-        <IconButton
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          size="small"
-          sx={{
-            color: (theme) => theme.palette.text.secondary,
-            "&:hover": {
-              color: (theme) => theme.palette.primary.main,
-              transform: "scale(1.1)",
-            },
-            transition: "all 0.2s ease-in-out",
-          }}
-        >
-          <GitHub />
-        </IconButton>
-      </CardActions>
-    </Card>
-  </motion.div>
-);
+            >
+              <GitHub />
+            </IconButton>
+          </CardActions>
+        </CardActionArea>
+      </Card>
+    </motion.div>
+  );
+};
 
 const Projects = () => (
   <>
