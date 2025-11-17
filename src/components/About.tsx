@@ -4,14 +4,14 @@ import { Theme } from "@mui/material/styles";
 import { motion } from "framer-motion";
 
 const skills = {
-  "Languages": ["SQL", "Python", "R", "Java", "C++", "JavaScript", "HTML", "CSS"],
+  "Languages": ["SQL", "Python", "R"],
   "Data Visualization & Business Intelligence": ["Tableau", "Tableau Prep Builder", "MS Power BI", "Excel (VLOOKUP, PivotTables, Macros, VBA)"],
   "Database": ["Snowflake", "BigQuery", "SQL Server Management Studio (SSMS)", "MySQL", "PostgreSQL"],
   "Data Engineering & Management": ["ETL/ELT Pipelines", "Data Modeling", "Data Warehousing", "Data Integration", "Data Quality", "Data Governance", "Data Privacy", "API Integration", "Data Advocacy"],
   "Cloud Computing": ["AWS", "GCP", "Snowflake", "Azure", "Databricks"],
-  "Data Orchestration & DevOps": ["Azure DevOps", "Airflow", "CI/CD"],
+  "Data Orchestration & DevOps": ["Airflow", "Git","Azure DevOps", "CI/CD"],
   "Media Intelligence": ["Google Analytics", "Meltwater", "MuckRack"],
-  // "Other Skills": ["Pandas", "NumPy", "Matplotlib", "PyTorch", "PySpark", "TensorFlow", "Scikit-learn", "SciPy", "GenAI", "Statistical Analysis", "Descriptive Analytics", "Predictive Analytics", "Prescriptive Analytics", "Robotic Process Automation (RPA)"]
+  // "Other Skills": ["Pandas", "NumPy", "Matplotlib", "PyTorch", "PySpark", "TensorFlow", "Scikit-learn", "SciPy", "GenAI", "Statistical Analysis", "Descriptive Analytics", "Predictive Analytics", "Prescriptive Analytics", "Robotic Process Automation (RPA)", "Java", "C++", "JavaScript", "HTML", "CSS"]
 };
 
 const About = () => (
@@ -66,7 +66,7 @@ const About = () => (
                 fontSize: { xs: "0.9rem", sm: "1rem" }, // Reduced font size
               }}
             >
-              Skilled in leading BI initiatives through agile workflows, stakeholder alignment, and cross-functional teamwork. Proficient in SQL, Python, R, Tableau, MS Power BI, Cloud Computing (AWS, Azure, GCP, Snowflake), Google Analytics, Project Management, and many more.
+              Skilled in analytics andleading BI initiatives through agile workflows, stakeholder alignment, and cross-functional teamwork. Proficient in SQL, Python, Tableau, Power BI, Cloud Computing (AWS, Azure, GCP, Snowflake), Google Analytics, Project Management, and many more.
             </Typography>
             <Typography 
               variant="body1" 
@@ -78,7 +78,19 @@ const About = () => (
                 fontSize: { xs: "0.9rem", sm: "1rem" }, // Reduced font size
               }}
             >
-              I get excited about opportunities where I can leverage big data to discover insights and identify patterns that have a real human impact. My work includes conducting in-depth data analysis, designing powerful visualization dashboards that deliver actionable insights, building data pipelines, optimizing workflows, and driving business intelligence initiatives.
+              I get excited about opportunities where I can leverage big data to discover insights and identify patterns that have a real impact. My work includes conducting in-depth data analysis, designing powerful visualization dashboards that deliver actionable insights, building data pipelines, optimizing workflows, and driving business intelligence initiatives.
+            </Typography>
+            <Typography 
+              variant="body1" 
+              paragraph
+              sx={{ 
+                textAlign: "left",
+                lineHeight: 1.5, // Reduced line height
+                mb: 1, // Reduced margin
+                fontSize: { xs: "0.9rem", sm: "1rem" }, // Reduced font size
+              }}
+            >
+              I enjoy roles that are both challenging and dynamic, and I like both leading projects and contributing hands-on. In doing that I'm able to wear variety of "hats" in order to get the job done.
             </Typography>
             <Typography 
               variant="body1" 

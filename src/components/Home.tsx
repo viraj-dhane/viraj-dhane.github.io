@@ -113,7 +113,7 @@ const Home = () => (
                   lineHeight: 1.6,
                 }}
               >
-                <strong>Data and Business Intelligence Analyst</strong> with 3+ years of experience in tech, consulting, and marketing. My goal is to bridge the gap between raw data and strategic decision-making.
+                <strong>Data and Business Intelligence Analyst</strong> with 4 years of experience in consulting, marketing, tech, and operations. My goal is to bridge the gap between raw data and strategic decision-making.
               </Typography>
             </motion.div>
 
